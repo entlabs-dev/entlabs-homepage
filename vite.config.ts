@@ -3,12 +3,11 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "node:path";
 import AutoImport from "unplugin-auto-import/vite";
 
-const base = "/entlabs-homepage/";
+const base = "/";
 
 export default defineConfig({
   define: {
     __BASE_PATH__: JSON.stringify(base),
-    __IS_PREVIEW__: JSON.stringify(false),
   },
   plugins: [
     react(),
